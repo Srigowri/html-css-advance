@@ -14,6 +14,7 @@
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgb(228, 228, 228);
+    z-index: 100;
 }
 .hamburger{
     height:24px;
@@ -58,12 +59,21 @@
     margin-left:-2px;
     margin-top:1px;
     margin-right:8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .voice-search-btn{
     width:40px;
     height:40px;
     border:none;
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 .search-icon{
@@ -107,4 +117,38 @@
     border:none;
     border-radius: 15px;
     object-fit: cover;
+}
+.bell-icon{
+    position: relative;
+}
+.msg-count{
+    background-color: red;
+    border:none;
+    position: absolute;  
+    top:-2px;
+    right:-5px;
+    z-index: 2; 
+    color:white;
+    font-weight: bold; 
+    padding:2px 5px 2px 5px;
+    border-radius: 10px;
+    font-size: 11px;
+}
+.search-btn .tooltip, .voice-search-btn .tooltip,
+.right-section-tools .tooltip{
+    position: absolute;
+    background-color: grey;
+    color:white;
+    border-radius: 2px;
+    padding:6px;
+    font-size: 11px;
+    bottom:-30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+.search-btn:hover .tooltip, 
+.voice-search-btn:hover .tooltip,
+.right-section-tools:hover .tooltip{
+    opacity: 1;
 }

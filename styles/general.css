@@ -6,6 +6,12 @@ p{
 body{
     margin: 0;
     padding-top:80px;
-    padding-left:80px;
+    padding-left:96px;
+    padding-right:24px;
     background-color: #dbdbdb;
+}
+.info-image{
+    width:30px;
+    height: 30px;
+    border-radius: 15px;
 }
