@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                height: 3000px;
+            }
+            .sidebar{
+                position:fixed;
+                left:0;
+                top:0;
+                bottom:0;
+                width: 300px;
+                display: flex;
+                flex-direction: row;
+            }
+            .friends,.channels{
+                display: flex;
+                flex-direction: column;
+            }
+            .friends{
+                width:70px;
+                background-color: rgb(57, 56, 56);
+            }
+            .channels{
+                flex:1;
+                background-color: rgb(107, 104, 104);
+            }
+            img{
+                width:50px;
+                height: 50px;
+                border-radius: 25px;
+                border:none;
+                align-items: center;
+                margin-top:15px;
+                margin-left:10px;                
+                object-fit: cover;
+            }
+            .info{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-left:10px;
+                margin-right:10px;
+                color:white
+            }
+            .channel-name{
+                margin-left: 10px;
+                color: whitesmoke;
+                line-height: 25px;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="friends">
+                <img src="../icons/SRIGOWRI_PORTRAIT.jpeg">
+                <img src="../icons/SRIGOWRI_PORTRAIT.jpeg">
+                <img src="../icons/SRIGOWRI_PORTRAIT.jpeg">
+                <img src="../icons/SRIGOWRI_PORTRAIT.jpeg">
+            </div>
+            <div class="channels">
+                <div class="info">
+                    <h3>INFO</h3>
+                    <h2>+</h2>
+                </div>
+                <div class="channel-name">
+                    <p># new-videos</p>
+                    <p># updates</p>
+                    <p># faq</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
