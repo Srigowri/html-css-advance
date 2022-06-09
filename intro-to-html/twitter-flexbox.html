@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .tweet{
+                display: flex;
+                flex-direction: row;
+                border:none;
+                box-shadow:0 1px 2px rgb(0,0,0,0.5);
+                width:450px;
+                padding-top:8px;
+                height:180px;
+            }
+            .photo{
+                width:50px;
+                height:50px;
+                border-radius: 25px;
+                border:none;
+                object-fit: cover;
+                padding-left:10px;
+                margin-right:8px;
+            }
+            .text{
+                margin-top: 8px;
+                margin-bottom: 8px;
+                font-size:18px;
+            }
+            .attachment{
+                display:flex;
+                flex-direction: row;
+                border-radius:10px;
+                border-style: solid;
+                border-width: 1px;
+                height:80px;
+                width:340px;
+            }
+            .left-section{
+                background-color: rgb(224, 221, 221);
+                width:100px;
+                height:80px;
+                border-bottom-left-radius: 8px;
+                border-top-left-radius: 8px;;
+                border-color: rgb(237, 232, 232);
+
+                
+            }
+            .attachment-box{
+                flex:1;
+                display: flex;
+                flex-direction: column;
+            }
+            .source{
+                margin-left:8px;
+                margin-bottom:0px;
+            }
+            .video-title{
+                margin-left:8px;
+                margin-top:0px; 
+            }
+        </style>
+    </head>
+    <body>
+      <div class="tweet">        
+            <img class="photo" src="../icons/youtube-logo.svg">
+            <div class="metadata">
+                <div class="handle"> <strong>supersimple.dev</strong> @SupersimpleDev</div>
+                <div class="text"> What is backend web development?A complete overview. New video is up!</div>
+                <div class="attachment">
+                    <div class="left-section">
+                        
+                    </div>
+                    <div class="attachment-box">
+                        <p class="source">youtube.com</p>
+                        <p class="video-title">Backend web development- a complete overview (2022)</p>                        
+                    </div>
+                </div>
+            </div>
+
+          
+
+      </div>
+    </body>
+</html>

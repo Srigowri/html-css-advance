@@ -4,189 +4,278 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <!-- <link rel="stylesheet" href="../styles/youtube.css">         -->
-        <style>
-            p{
-                font-family: Roboto, Arial;
-                margin-top:0;
-                margin-bottom: 0;
-            }
-
-            .search-bar{
-                display: block;
-                font-size:16px;
-                color: rgb(17,17,17);
-                font-family: Roboto;
-                padding: 1px 0 1px 0;
-                border: none;
-                border-style: solid;
-                margin-bottom:15px;
-                border-width: 1px;
-                padding: 10px 5px 10px 5px;
-                width: 350px;                
-            }
-            .video-preview{
-                display: inline-block;
-                width:300px;
-                border: none;
-                vertical-align: top;
-                margin-right: 15px;
-
-            }
-            .video-title{
-                
-                font-weight: bold;
-                line-height: 20px;
-                margin-top:0;
-                margin-bottom: 15px;
-            }
-            .video-owner, .video-stat{
-                color: rgb(96,96,96 );
-                font-size:12px;
-                
-            }
-            .video-owner{
-                margin-bottom:4px;
-            }
-
-            .thumbnail{
-                width:300px;
-                border:none;
-            }
-            .dp{
-                width:50px;
-                height: 50px;
-                object-fit: cover;
-                object-position: center;
-                border-radius: 25px;
-                border:none;
-            }
-            .channel-picture-container{
-                display: inline-block;
-                vertical-align: center;
-                margin-top:0;                
-                width: 50px;
-            }
-            .video-info{
-                display: inline-block;
-                vertical-align: top;                
-                width:240px
-            }
-            .thumbnail-container{
-                margin-bottom: 10px;
-            }
-        </style>
-
+        <link rel="stylesheet" href="../styles/header.css">        
+        <link rel="stylesheet" href="../styles/body.css">        
+        <link rel="stylesheet" href="../styles/general.css">        
     </head>
     <body>
-        <input class="search-bar" type="text" placeholder="Search">
-        <div class="video-preview">
-            <div class="thumbnail-container">
-                <img class="thumbnail" src="thumbnails/hq720.webp">        
+        <div class="header">
+            <div class="left-section">
+                <img class="hamburger" src="../icons/hamburger-menu.svg">
+                <img class="yt-logo" src="../icons/youtube-logo.svg">
+
             </div>
-            <div>
-                <div class="channel-picture-container">
-                    <img class="dp" src="thumbnails/hq720.webp">        
-                </div>
-                <div class="video-info">
-                    <div>
-                        <p class="video-title">
-                            Top Quad Exercises | Build a Superhero Physique
-                        </p>
-                    </div>
-                    <div>
-                        <p class="video-owner">
-                            Erin Stern
-                        </p>
-                    </div>
-                    <div>
-                        <p class="video-stat">
-                            700K views &#183 4 years ago
-                        </p>
-                    </div>
-                </div>
-            </div>    
-        </div>
-        <div class="video-preview">
-            <div class="thumbnail-container">
-                <img class="thumbnail" src="thumbnails/hq720.webp">        
+            <div class="middle-section">
+                <input class="search-bar" type="text" placeholder="Search">
+                <button class="search-btn" >
+                    <img class="search-icon" src="../icons/search.svg">
+                </button>
+                <button class="voice-search-btn">
+                    <img class="voice-icon" src="../icons/voice-search-icon.svg">
+                </button>
+                
+
             </div>
-            <div>
-                <div class="channel-picture-container">
-                    <img class="dp" src="thumbnails/hq720.webp">        
-                </div>
-                <div class="video-info">
-                    <div>
-                        <p class="video-title">
-                            Top Quad Exercises | Build a Superhero Physique
-                        </p>
-                    </div>
-                    <div>
-                        <p class="video-owner">
-                            Erin Stern
-                        </p>
-                    </div>
-                    <div>
-                        <p class="video-stat">
-                            700K views &#183 4 years ago
-                        </p>
-                    </div>
-                </div>
-            </div>    
-        </div>
-        <div class="video-preview">
-            <div class="thumbnail-container">
-                <img class="thumbnail" src="thumbnails/hq720.webp">        
+            <div class="right-section">
+                right
+                
             </div>
-            <div>
-                <div class="channel-picture-container">
-                    <img class="dp" src="thumbnails/hq720.webp">        
+        </div>    
+        
+        <div class="homepage">            
+            <div class="video-preview">
+                <div class="thumbnail-container">
+                    <img class="thumbnail" src="thumbnails/hq720.webp">        
                 </div>
-                <div class="video-info">
-                    <div>
-                        <p class="video-title">
-                            Top Quad Exercises | Build a Superhero Physique
-                        </p>
+                <div class="video-info-container">
+                    <div class="channel-picture-container">
+                        <img class="dp" src="thumbnails/hq720.webp">        
                     </div>
-                    <div>
-                        <p class="video-owner">
-                            Erin Stern
-                        </p>
+                    <div class="video-info">
+                        <div>
+                            <p class="video-title">
+                                Top Quad Exercises | Build a Superhero Physique
+                            </p>
+                        </div>
+                        <div>
+                            <p class="video-owner">
+                                Erin Stern
+                            </p>
+                        </div>
+                        <div>
+                            <p class="video-stat">
+                                700K views &#183 4 years ago
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <p class="video-stat">
-                            700K views &#183 4 years ago
-                        </p>
-                    </div>
-                </div>
-            </div>    
-        </div>
-        <div class="video-preview">
-            <div class="thumbnail-container">
-                <img class="thumbnail" src="thumbnails/hq720.webp">        
+                </div>    
             </div>
-            <div>
-                <div class="channel-picture-container">
-                    <img class="dp" src="thumbnails/hq720.webp">        
+            <div class="video-preview">
+                <div class="thumbnail-container">
+                    <img class="thumbnail" src="thumbnails/hq720.webp">        
                 </div>
-                <div class="video-info">
-                    <div>
-                        <p class="video-title">
-                            Top Quad Exercises | Build a Superhero Physique
-                        </p>
+                <div class="video-info-container">
+                    <div class="channel-picture-container">
+                        <img class="dp" src="thumbnails/hq720.webp">        
                     </div>
-                    <div>
-                        <p class="video-owner">
-                            Erin Stern
-                        </p>
+                    <div class="video-info">
+                        <div>
+                            <p class="video-title">
+                                Top Quad Exercises | Build a Superhero Physique
+                            </p>
+                        </div>
+                        <div>
+                            <p class="video-owner">
+                                Erin Stern
+                            </p>
+                        </div>
+                        <div>
+                            <p class="video-stat">
+                                700K views &#183 4 years ago
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <p class="video-stat">
-                            700K views &#183 4 years ago
-                        </p>
-                    </div>
+                </div>    
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-container">
+                    <img class="thumbnail" src="thumbnails/hq720.webp">        
                 </div>
-            </div>    
-        </div>        
+                <div class="video-info-container">
+                    <div class="channel-picture-container">
+                        <img class="dp" src="thumbnails/hq720.webp">        
+                    </div>
+                    <div class="video-info">
+                        <div>
+                            <p class="video-title">
+                                Top Quad Exercises | Build a Superhero Physique
+                            </p>
+                        </div>
+                        <div>
+                            <p class="video-owner">
+                                Erin Stern
+                            </p>
+                        </div>
+                        <div>
+                            <p class="video-stat">
+                                700K views &#183 4 years ago
+                            </p>
+                        </div>
+                    </div>
+                </div>    
+            </div>        
+            <div class="video-preview">
+                <div class="thumbnail-container">
+                    <img class="thumbnail" src="thumbnails/hq720.webp">        
+                </div>
+                <div class="video-info-container">
+                    <div class="channel-picture-container">
+                        <img class="dp" src="thumbnails/hq720.webp">        
+                    </div>
+                    <div class="video-info">
+                        <div>
+                            <p class="video-title">
+                                Top Quad Exercises | Build a Superhero Physique
+                            </p>
+                        </div>
+                        <div>
+                            <p class="video-owner">
+                                Erin Stern
+                            </p>
+                        </div>
+                        <div>
+                            <p class="video-stat">
+                                700K views &#183 4 years ago
+                            </p>
+                        </div>
+                    </div>
+                </div>    
+            </div>  
+            <div class="video-preview">
+                <div class="thumbnail-container">
+                    <img class="thumbnail" src="thumbnails/hq720.webp">        
+                </div>
+                <div class="video-info-container">
+                    <div class="channel-picture-container">
+                        <img class="dp" src="thumbnails/hq720.webp">        
+                    </div>
+                    <div class="video-info">
+                        <div>
+                            <p class="video-title">
+                                Top Quad Exercises | Build a Superhero Physique
+                            </p>
+                        </div>
+                        <div>
+                            <p class="video-owner">
+                                Erin Stern
+                            </p>
+                        </div>
+                        <div>
+                            <p class="video-stat">
+                                700K views &#183 4 years ago
+                            </p>
+                        </div>
+                    </div>
+                </div>    
+            </div> 
+            <div class="video-preview">
+                <div class="thumbnail-container">
+                    <img class="thumbnail" src="thumbnails/hq720.webp">        
+                </div>
+                <div class="video-info-container">
+                    <div class="channel-picture-container">
+                        <img class="dp" src="thumbnails/hq720.webp">        
+                    </div>
+                    <div class="video-info">
+                        <div>
+                            <p class="video-title">
+                                Top Quad Exercises | Build a Superhero Physique
+                            </p>
+                        </div>
+                        <div>
+                            <p class="video-owner">
+                                Erin Stern
+                            </p>
+                        </div>
+                        <div>
+                            <p class="video-stat">
+                                700K views &#183 4 years ago
+                            </p>
+                        </div>
+                    </div>
+                </div>    
+            </div> 
+            <div class="video-preview">
+                <div class="thumbnail-container">
+                    <img class="thumbnail" src="thumbnails/hq720.webp">        
+                </div>
+                <div class="video-info-container">
+                    <div class="channel-picture-container">
+                        <img class="dp" src="thumbnails/hq720.webp">        
+                    </div>
+                    <div class="video-info">
+                        <div>
+                            <p class="video-title">
+                                Top Quad Exercises | Build a Superhero Physique
+                            </p>
+                        </div>
+                        <div>
+                            <p class="video-owner">
+                                Erin Stern
+                            </p>
+                        </div>
+                        <div>
+                            <p class="video-stat">
+                                700K views &#183 4 years ago
+                            </p>
+                        </div>
+                    </div>
+                </div>    
+            </div> 
+            <div class="video-preview">
+                <div class="thumbnail-container">
+                    <img class="thumbnail" src="thumbnails/hq720.webp">        
+                </div>
+                <div class="video-info-container">
+                    <div class="channel-picture-container">
+                        <img class="dp" src="thumbnails/hq720.webp">        
+                    </div>
+                    <div class="video-info">
+                        <div>
+                            <p class="video-title">
+                                Top Quad Exercises | Build a Superhero Physique
+                            </p>
+                        </div>
+                        <div>
+                            <p class="video-owner">
+                                Erin Stern
+                            </p>
+                        </div>
+                        <div>
+                            <p class="video-stat">
+                                700K views &#183 4 years ago
+                            </p>
+                        </div>
+                    </div>
+                </div>    
+            </div> 
+            <div class="video-preview">
+                <div class="thumbnail-container">
+                    <img class="thumbnail" src="thumbnails/hq720.webp">        
+                </div>
+                <div class="video-info-container">
+                    <div class="channel-picture-container">
+                        <img class="dp" src="thumbnails/hq720.webp">        
+                    </div>
+                    <div class="video-info">
+                        <div>
+                            <p class="video-title">
+                                Top Quad Exercises | Build a Superhero Physique
+                            </p>
+                        </div>
+                        <div>
+                            <p class="video-owner">
+                                Erin Stern
+                            </p>
+                        </div>
+                        <div>
+                            <p class="video-stat">
+                                700K views &#183 4 years ago
+                            </p>
+                        </div>
+                    </div>
+                </div>    
+            </div> 
+        </div> 
     </body>
 </html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .two-column-grid{
+                display: grid;
+                grid-template-columns: 200px 75px;                
+                margin-bottom: 20px;
+            }
+            .three-column-grid{
+                display: grid;
+                grid-template-columns: 50px 1fr 75px;                
+                margin-bottom: 20px;
+            }
+            .two-by-three{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                column-gap: 20px;
+                row-gap:10px;
+            }
+            .fb-grid{
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 20px;
+                
+                }
+            .info-grid{
+                display: grid;
+                grid-template-columns: 50px 1fr;
+                margin-top:0px;
+                margin-bottom: 10px;
+                column-gap: 10px;
+                
+            }
+            .dp{
+                width:50px;
+                height:50px;
+                object-fit: cover;
+                border:none;
+                border-radius: 25px;
+            }
+            .metadata{
+                margin-left:10px;
+            }
+            .profile-container{
+                width:200px;
+                height:320px;
+                border:none;
+                box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+            }
+            .profile-picture{
+                width:200px;
+                height:160px;
+                border:none;
+            }
+            .add{
+                background-color: blue;
+                color:white;
+                padding:10px 5px 10px 5px;
+                border: none;
+                width: 100px;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="two-column-grid">
+            <div style="background-color: pink; padding-top:12px; padding-bottom: 12px;">200px</div>
+            <div style="background-color: blue; padding-top:12px; padding-bottom: 12px;">75px</div>
+        </div>
+        <div class="three-column-grid">
+            <div style="background-color: pink; padding-top:12px; padding-bottom: 12px;">50px</div>
+            <div style="background-color: blue; padding-top:12px; padding-bottom: 12px;">1fr</div>
+            <div style="background-color: red; padding-top:12px; padding-bottom: 12px;">75px</div>
+        </div>
+        <div class="two-by-three">
+            <div style="background-color: pink; padding-top:12px; padding-bottom: 12px;">1fr</div>
+            <div style="background-color: blue; padding-top:12px; padding-bottom: 12px;">1fr</div>
+            <div style="background-color: pink; padding-top:12px; padding-bottom: 12px;">1fr</div>
+            <div style="background-color: blue; padding-top:12px; padding-bottom: 12px;">1fr</div>
+            <div style="background-color: pink; padding-top:12px; padding-bottom: 12px;">1fr</div>
+            <div style="background-color: blue; padding-top:12px; padding-bottom: 12px;">1fr</div>
+            <div style="background-color: pink; padding-top:12px; padding-bottom: 12px;">1fr</div>
+            <div style="background-color: blue; padding-top:12px; padding-bottom: 12px;">1fr</div>
+            <div style="background-color: pink; padding-top:12px; padding-bottom: 12px;">1fr</div>
+            <div style="background-color: blue; padding-top:12px; padding-bottom: 12px;">1fr</div>
+            <div style="background-color: pink; padding-top:12px; padding-bottom: 12px;">1fr</div>
+            <div style="background-color: blue; padding-top:12px; padding-bottom: 12px;">1fr</div>
+        </div>
+
+
+        <div class="fb-grid">
+            <div class="profile-container">
+                <img class="profile-picture" src="../thumbnails/hq720.webp">
+            
+                <div class="metadata">
+                    <p> <strong> Oliver</strong></p>
+                    <div class="info-grid">
+                        <img class="dp" src="../thumbnails/hq720.webp">
+                        <p> 2 mutual friends</p>                
+                    </div>
+                    <div>
+                        <button class="add">Add Friend</button>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </body>
+</html>

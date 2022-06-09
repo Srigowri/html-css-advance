@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .two-items{
+                display: flex;
+                flex-direction: row;
+                margin-top:20px;
+            }
+            .three-items{
+                display: flex;
+                flex-direction: row;
+                margin-top:20px;
+
+            }
+            .four-items{
+                margin-top:20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                border-style: solid;
+                border-color: red;
+                border-width:2px;
+                height: 50px;
+            }
+            .menu{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                padding-left: 12px;
+                padding-right: 12px;
+                
+                
+            }
+            .container{
+                margin-top:20px;
+                border-style:solid;
+                border-width: 2px;
+                border-radius: 5px;
+                width:300px;
+                font-size:20px;
+            }
+            .number{
+                background-color: blue;
+                color:white;
+                font-weight: bold;
+                font-size:16px;
+                border-radius: 10px;
+                border:none;
+                padding-bottom:3px;
+                padding-top: 3px;
+                padding-left: 10px;
+                padding-right: 10px;
+
+            }
+            .purple-bar{
+                margin-top: 20px;
+                display:flex;
+                flex-direction:row;
+                justify-content:space-between;
+                align-items:center;
+                background-color: #7247b8;
+                padding-left:10px;
+                padding-right: 10px;
+                padding-top:5px;
+                padding-bottom:5px;
+            }
+            .home{
+                font-weight: bold;
+                font-size: 18px;
+                color:white
+            }
+            .search{
+                width: 1000px;
+                background-color: white;
+                border-radius: 50px;
+                padding: 12px 5px 12px 10px;
+                border:none;    
+                font-size:16px;            
+
+            }
+            .download{
+                color:white;
+                background-color: #7247b8;
+                width:180px;
+                border-color: white;
+                border-style: solid;
+                padding:12px 5px 12px 5px;
+                font-size:16px;   
+            }
+            .requests{
+                margin-top:30px;
+                display:flex;
+                flex-direction:row;                
+                align-items:center;
+            }
+            img{
+                width:50px;
+                height:50px;
+                border-radius:25px;
+                border:none;
+                object-fit: cover;
+                margin-right:15px;
+            }
+            .info{
+                width:200px;
+                line-height: 10px;
+            }
+            .name{
+                font-weight: bold;
+                margin-bottom:3px;
+            }
+            .handle {
+                color: rgb(150, 150, 150);
+                margin-bottom: 5px;
+                }
+
+                .category {
+                color: rgb(150, 150, 150);
+                font-size: 14px;
+                }
+                .follow-button {
+                    background-color: rgb(29, 155, 240);
+                    color: white;
+                    border: none;
+                    font-size: 16px;
+                    font-weight: bold;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    }
+        </style>
+    </head>
+    <body>
+        <div class="two-items">
+            <div style="width:200px; background: pink"> 200px </div>
+            <div style="width:75px; background: blue"> 75px </div>                                                
+        </div>
+        <div class="three-items">
+            <div style="width:50px; background: pink"> item1 </div>
+            <div style="flex:1; background: blue"> item2 </div>                                                
+            <div style="width:75px; background: pink"> item3 </div>                                                
+        </div>
+        <div class="four-items">
+            <div style="width:50px; background: pink"> item1 </div>
+            <div style="width:50px; background: blue"> item2 </div>                                                
+            <div style="width:50px; background: pink"> item3 </div>                                                
+            <div style="width:50px; background: blue"> item4 </div>                                                
+        </div>
+
+       <div class="container">
+            <div class="menu">            
+                <div>Home</div>
+                <div class="number">14</div>
+            </div>
+            <div class="menu">            
+                <div>Notifications</div>
+                <div class="number">3</div>
+            </div>
+            <div class="menu">            
+                <div>Messages</div>
+                <div class="number">5</div>
+            </div>
+       </div>
+
+
+       <div class="purple-bar">
+           <div class="home">Home</div>
+           <input class="search" type="text" placeholder="Search">                          
+           <button class="download">Download</button>           
+       </div>
+
+       <div class="requests">
+            <img src="../thumbnails/hq720.webp">
+            <div class="info">
+                <p class="name">oliver</p>
+                <p class="handle">the cat</p>
+                <p class="category">Popular</p>
+            </div>
+            <button class="follow-button">Follow</button>
+            
+       </div>
+       <div class="requests">
+            <img src="../thumbnails/hq720.webp">
+            <div class="info">
+                <p class="name">oliver</p>
+                <p class="handle">the cat</p>
+                <p class="category">Popular</p>
+            </div>
+            <button class="follow-button">Follow</button>
+            
+        </div>
+        <div class="requests">
+            <img src="../thumbnails/hq720.webp">
+            <div class="info">
+                <p class="name">oliver</p>
+                <p class="handle">the cat</p>
+                <p class="category">Popular</p>
+            </div>
+            <button class="follow-button">Follow</button>            
+        </div>
+    </body>
+</html>
+
